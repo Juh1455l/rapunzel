@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Um fluxograma interativo sobre como a inteligência artificial pode ajudar a proteger o meio ambiente." />
+  <title>IA pelo Planeta | Fluxograma interativo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="IA pelo Planeta - início">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>IA pelo <strong>Planeta</strong></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#explore">Explore</a>
+    </nav>
+    <a class="header-cta" href="#explore">Descobrir <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Tecnologia a favor da vida</p>
+        <h1>Um futuro mais <em>verde</em> começa com boas perguntas.</h1>
+        <p class="hero-text">Descubra como a inteligência artificial pode transformar dados em ações para cuidar do nosso planeta — dos oceanos às florestas.</p>
+        <a class="primary-button" href="#explore">Explorar o fluxograma <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de um planeta com folhas">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="planet"><span class="continent continent-one"></span><span class="continent continent-two"></span><span class="continent continent-three"></span></div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✦</span><span class="leaf leaf-one">⌁</span><span class="leaf leaf-two">⌁</span>
+      </div>
+    </section>
+
+    <section class="intro" id="como-funciona">
+      <div>
+        <p class="eyebrow"><span></span> O mapa da transformação</p>
+        <h2>Do sinal à <em>mudança.</em></h2>
+      </div>
+      <p>Ao analisar grandes volumes de dados, a IA ajuda a entender o que está acontecendo na natureza e a agir antes que seja tarde. <strong>Clique nos caminhos</strong> para conhecer cada possibilidade.</p>
+    </section>
+
+    <section class="flow-section" id="explore">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div><h2>Um ecossistema de ideias</h2><p>Escolha um ponto do fluxo para revelar seu impacto.</p></div>
+      </div>
+      <div class="flowchart" aria-label="Fluxograma sobre aplicações ambientais da inteligência artificial">
+        <div class="flow-line line-a" aria-hidden="true"></div><div class="flow-line line-b" aria-hidden="true"></div><div class="flow-line line-c" aria-hidden="true"></div><div class="flow-line line-d" aria-hidden="true"></div>
+        <button class="flow-node node-start" data-topic="visao" aria-label="Abrir: perceber o planeta"><span class="node-icon">◉</span><span class="node-label">Perceber<br>o planeta</span><small>dados + IA</small></button>
+        <button class="flow-node node-ocean" data-topic="oceano" aria-label="Abrir: oceanos vivos"><span class="node-icon">≈</span><span class="node-label">Oceanos<br>vivos</span><small>proteger</small><span class="node-plus">+</span></button>
+        <button class="flow-node node-forest" data-topic="florestas" aria-label="Abrir: florestas de pé"><span class="node-icon">♧</span><span class="node-label">Florestas<br>de pé</span><small>regenerar</small><span class="node-plus">+</span></button>
+        <button class="flow-node node-energy" data-topic="energia" aria-label="Abrir: energia inteligente"><span class="node-icon">↯</span><span class="node-label">Energia<br>inteligente</span><small>equilibrar</small><span class="node-plus">+</span></button>
+        <button class="flow-node node-city" data-topic="cidades" aria-label="Abrir: cidades resilientes"><span class="node-icon">⌂</span><span class="node-label">Cidades<br>resilientes</span><small>adaptar</small><span class="node-plus">+</span></button>
+        <div class="flow-end"><span>um futuro</span><strong>regenerativo</strong><span class="end-sun">✦</span></div>
+      </div>
+      <div class="flow-hint"><span>↖</span> Cada conexão abre uma nova perspectiva</div>
+    </section>
+
+    <section class="impact-section">
+      <div class="impact-quote"><span class="quote-mark">“</span><p>A tecnologia não substitui o cuidado. Ela amplia nossa capacidade de cuidar.</p><span class="quote-by">— uma nova forma de colaborar com a natureza</span></div>
+      <div class="impact-stat"><span class="stat-icon">✺</span><strong>5</strong><p>frentes de impacto<br>para explorar</p></div>
+    </section>
+  </main>
+
+  <footer><span>IA pelo Planeta © 2024</span><span>Feito com curiosidade e responsabilidade.</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <article class="info-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close-modal" id="close-modal" aria-label="Fechar">×</button>
+      <div class="modal-icon" id="modal-icon"></div>
+      <p class="eyebrow" id="modal-kicker"></p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <div class="modal-detail"><span>Como a IA ajuda</span><strong id="modal-detail"></strong></div>
+      <div class="modal-tags" id="modal-tags"></div>
+    </article>
+  </div>
+</body>
+</html>
